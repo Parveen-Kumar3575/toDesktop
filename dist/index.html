@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ^^^ Navbar starts -->
+    <nav class="flex justify-between p-3 items-center box-border  fixed w-full bg-white">
+        <!-- brand name -->
+        <div class="nav-left flex md:flex gap-2 items-center ">
+            <img class="max-h-12 max-w-12" src="../images/asset 0.png" alt="">
+            <h2 class="text-lg font-bold ">toDesktop</h2>
+        </div>
+
+        <!-- options or menus -->
+        <div class="nav-center md:flex lg:gap-10 md:gap-4 lg:font-bold hidden">
+            <a class=" hover:text-blue-700" href="#">Pricing</a>
+            <a class=" hover:text-blue-700" href="#">Docs</a>
+            <a class=" hover:text-blue-700" href="#">Changelog</a>
+            <a class=" hover:text-blue-700" href="#">Blog</a>
+            <a class=" hover:text-blue-700" href="#">Login</a>
+        </div>
+
+        <!-- button  -->
+        <div class="medium-button hidden md:block">
+            <button class="flex gap-2 items-center border border-gray-300 p-3 rounded-xl font-bold hover:border-gray-600">
+                <img src="../images/asset 1.svg" alt="" srcset="">
+                Electron Developer
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <!-- bars -->
+        <div class="nav-right md:hidden">
+            <i class="fa-solid fa-bars bars text-md hover:cursor-pointer"></i>
+        </div>
+
+        <!-- hidden menu is here for small screen -->
+        <div class="menu w-full flex flex-col gap-10 hidden md:hidden">
+
+        <!-- brand name -->
+            <div class="top flex justify-between pr-1">
+                <div class="menu-right nav-left flex gap-2 items-center">
+                    <img class="max-h-12 max-w-12" src="../images/asset 0.png" alt="">
+                    <h2 class="text-lg font-bold ">toDesktop</h2>
+                </div>
+                <div class="menu-left md:hidden mt-2 ml-2 ">
+                    <i class="fa-solid fa-xmark hover:cursor-pointer text-xl cross"></i>
+                </div>
+            </div>
+
+            <!-- options -->
+            <div class="options flex flex-col gap-3 ml-3 gap-5">
+                <a class="hover:bg-gray-100 p-3 font-bold rounded-md" href="#">Pricing</a>
+                <a class="hover:bg-gray-100 p-3 font-bold rounded-md" href="#">Docs</a>
+                <a class="hover:bg-gray-100 p-3 font-bold rounded-md" href="#">Changelog</a>
+                <a class="hover:bg-gray-100 p-3 font-bold rounded-md" href="#">Blog</a>
+                <a class="hover:bg-gray-100 p-3 font-bold rounded-md" href="#">Login</a>
+            </div>
+
+            <hr class="bg-gray-100">
+
+            <button class="flex gap-2 items-center border border-gray-300 p-3 rounded-xl font-bold hover:border-gray-600">
+                <img src="../images/asset 1.svg" alt="" srcset="">
+                Electron Developer
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+        <!-- hidden menu ends here  -->
+
+    </nav>
+    <!-- **** Navar ends -->
+
+    <!-- ^^^ hero/main section  -->
+     <main class="md:min-h-screen min-h-[82vh] p-4 pt-28 flex flex-col md:items-center gap-8 md:gap-12 bg-gradient-to-br from-purple-50 via-orange-50 to-transparent ">
+
+        <p class="p-1 px-2 border border-orange-500 bg-yellow-100 w-fit text-sm rounded-md hover:scale-[1.02] hover:shadow-sm hover:shadow-gray-700 hover:cursor-pointer">
+            <span class="text-orange-600">
+            <i class="fa-solid fa-circle"></i> V.0.21.1 : </span>
+            <strong class="text-orange-900">Find-in-page bug fixes </strong>
+            <i class="fa-solid fa-arrow-right text-orange-600"></i>
+        </p>
+        <div class="hidden sm:flex justify-evenly w-full text-gray-500 md:text-lg">
+            <p class="hover:cursor-pointer"><i class="fa-solid fa-file-code"></i> Code Optional</p>
+            <p class="hover:cursor-pointer"><i class="fa-solid fa-hand-point-up"></i> Drag & drop builder</p>
+            <p class="hover:cursor-pointer"><i class="fa-solid fa-laptop"></i> Windows, Mac, Linux</p>
+        </div>
+        <h1 class="text-4xl md:text-6xl md:text-center lg:text-[82px] font-bold">Web App to Desktop App in minutes</h1>
+        <p class="md:text-xl lg:text-2xl md:text-center">Take you Web app codebase and transform it into a cross desktop app with native functionality.</p>
+        <div class="buttons flex flex-col md:flex-row gap-3">
+            <button class="text-white bg-blue-700 p-3 md:w-52 lg:w-72 hover:bg-blue-800 rounded-md font-bold">Download Once </button>
+            <button class="text-black bg-white p-3 md:w-52 lg:w-72 hover:bg-gray-50 rounded-md font-bold border border-gray-400">Read Docs</button>
+        </div>
+     </main>
+    <!-- *** hero/main section ends here  -->
+    
+    <!-- ^^^ bent grid -->
+     <section class="bent-grid p-6 pt-12 ">
+        <h1 class="font-bold text-4xl lg:text-5xl">ToDestop handles the details</h1>
+        <div class="grid-container flex flex-col mt-12 gap-7 lg:grid lg:grid-cols-3" style="grid-auto-rows : 96px;">
+
+            <div class="outer row-start-1 row-end-3  bg-gray-200 p-0.5 rounded-lg group hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
+                <div class="bg-slate-50 rounded-lg p-3 flex flex-col gap-1 items-center justify-center h-[100%] group-hover:bg-gradient-to-br group-hover:from-red-100 group-hover:via-purple-100 group-hover:to-yellow-100">
+                    <h2 class="text-xl font-bold">Native Notifications </h2>
+                    <img src="../images/asset 37.png" alt="">
+                </div>
+            </div>
+
+            <div class="outer row-start-1 row-end-4 bg-gray-200 p-0.5 rounded-lg group hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
+                <div class="bg-slate-50 rounded-lg p-3 flex flex-col gap-4 items-center justify-center h-[100%]  group-hover:bg-gradient-to-br group-hover:from-red-100 group-hover:via-purple-100 group-hover:to-yellow-100">
+                    <h2 class="text-xl font-bold">Native Notifications </h2>
+                    <p class="text-center text-md md:text-lg">We'll ensure the underlying browser is up to date and deliver performance improvements, security patches, & additional patches</p>
+                    <img src="../images/asset 37.png" alt="">
+                </div>
+            </div>
+
+            <div class="outer row-start-1 row-end-3 bg-gray-200 p-0.5 rounded-lg group hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
+                <div class="bg-slate-50 rounded-lg p-3 flex flex-col gap-1 items-center justify-center h-[100%]  group-hover:bg-gradient-to-br group-hover:from-red-100 group-hover:via-purple-100 group-hover:to-yellow-100">
+                    <h2 class="text-xl font-bold">Native Notifications </h2>
+                    <img src="../images/asset 37.png" alt="">
+                </div>
+            </div>
+
+            <div class="outer row-start-3 row-end-6 bg-gray-200 p-0.5 rounded-lg group hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
+                <div class="bg-slate-50 rounded-lg p-3 flex flex-col gap-4 items-center justify-center h-[100%]  group-hover:bg-gradient-to-br group-hover:from-red-100 group-hover:via-purple-100 group-hover:to-yellow-100">
+                    <h2 class="text-xl font-bold">Native Notifications </h2>
+                    <p class="text-center text-md md:text-lg">We'll ensure the underlying browser is up to date and deliver performance improvements, security patches, & additional patches</p>
+                    <img src="../images/asset 37.png" alt="">
+                </div>
+            </div>
+
+            <div class="outer row-start-4 row-end-6  bg-gray-200 p-0.5 rounded-lg group hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
+                <div class="bg-slate-50 rounded-lg p-3 flex flex-col gap-1 items-center justify-center h-[100%]  group-hover:bg-gradient-to-br group-hover:from-red-100 group-hover:via-purple-100 group-hover:to-yellow-100">
+                    <h2 class="text-xl font-bold">Native Notifications </h2>
+                    <img src="../images/asset 37.png" alt="">
+                </div>
+            </div>
+
+            <div class="outer row-start-3 row-end-6 bg-gray-200 p-0.5 rounded-lg group hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
+                <div class="bg-slate-50 rounded-lg p-3 flex flex-col gap-4 items-center justify-center h-[100%]  group-hover:bg-gradient-to-br group-hover:from-red-100 group-hover:via-purple-100 group-hover:to-yellow-100">
+                    <h2 class="text-xl font-bold">Native Notifications </h2>
+                    <p class="text-center text-md md:text-lg">We'll ensure the underlying browser is up to date and deliver performance improvements, security patches, & additional patches</p>
+                    <img src="../images/asset 37.png" alt="">
+                </div>
+            </div>
+
+        </div>
+     </section>
+     <!-- *** bent-grid section done here  -->
+
+    <!-- ^^^ feature section -->
+     <section class="features p-6 pt-12">
+        <h1 class="font-bold text-4xl lg:text-5xl">ToDestop handles the details</h1>
+
+        <!-- feature card -->
+        <div class="flex flex-col gap-12 md:flex-row border border-gray-400 rounded-md p-8 mt-6 md:mt-8 lg:mt-12 items-center">
+        <!-- inner content div -->
+        <div class="flex flex-col gap-6 sm:w-1/2">
+            <!-- step1 -->
+            <div class="bg-yellow-50 border border-orange-700 text-orange-900 p-2 px-5 rounded-md w-fit ">Step 1</div>
+            <h1 class="font-bold text-3xl lg:text-4xl">Bootstrap straight from your web app</h1>
+            <p class="text-lg text-gray-600">Copy and paste your web app urf into toDesktop. Customize your app design, app , icon and window frame UI with no code. </p>
+            <ul class="grid grid-cols-2 text-sm sm:text-md gap-3 ">
+                <li class="text-gray-500  flex items-center gap-4 hover:cursor-pointer">
+                    <i class="fa-solid fa-check"></i>
+                    <span class="border-b border-b-gray-500 hover:border-b-gray-900">Multiple Windows</span>
+                </li>
+                <li class="text-gray-500 flex items-center gap-4 hover:cursor-pointer">
+                    <i class="fa-solid fa-check"></i>
+                    <span class="border-b border-b-gray-500 hover:border-black">Multiple Windows</span>
+                </li>
+                <li class="text-gray-500 flex items-center gap-4 hover:cursor-pointer">
+                    <i class="fa-solid fa-check"></i>
+                    <span class="border-b border-b-gray-500 hover:border-b-gray-900">Multiple Windows</span>
+                </li>
+                <li class="text-gray-500 flex items-center gap-4 hover:cursor-pointer">
+                    <i class="fa-solid fa-check"></i>
+                    <span class="border-b border-b-gray-500 hover:border-b-gray-900">Multiple Windows</span>
+                </li>
+                <li class="text-gray-500 flex items-center gap-4 hover:cursor-pointer">
+                    <i class="fa-solid fa-check"></i>
+                    <span class="border-b border-b-gray-500 hover:border-b-gray-900">Multiple Windows</span>
+                </li>
+                <li class="text-gray-500 flex items-center gap-4 hover:cursor-pointer">
+                    <i class="fa-solid fa-check"></i>
+                    <span class="border-b border-b-gray-500 hover:border-b-gray-900">Multiple Windows</span>
+                </li>
+            </ul>    
+        </div>
+        <!-- inner content div ends here  -->
+
+        <!-- image div -->
+         <div class="image-inner-section">
+            <img src="../images/asset 66.svg" alt="">
+         </div>
+         <!-- imge div ends here  -->
+        </div>
+        <!-- feature card ends here  -->
+
+         <!-- feature2 card -->
+        <div class="flex flex-col gap-12 md:flex-row border border-gray-400 rounded-md p-8 mt-6 md:mt-8 lg:mt-12 items-center">
+        <!-- inner content div -->
+        <div class="flex flex-col gap-6 sm:w-1/2">
+            <!-- step2 -->
+            <div class="bg-yellow-50 border border-orange-700 text-orange-900 p-2 px-5 rounded-md w-fit ">Step 2</div>
+            <h1 class="font-bold text-3xl lg:text-4xl">Bootstrap straight from your web app</h1>
+            <p class="text-lg text-gray-600">Copy and paste your web app urf into toDesktop. Customize your app design, app , icon and window frame UI with no code. </p>
+            <ul class="grid grid-cols-2 text-sm sm:text-md gap-3 ">
+                <li class="text-gray-500  flex items-center gap-4 hover:cursor-pointer">
+                    <i class="fa-solid fa-check"></i>
+                    <span class="border-b border-b-gray-500 hover:border-b-gray-900">Multiple Windows</span>
+                </li>
+                <li class="text-gray-500 flex items-center gap-4 hover:cursor-pointer">
+                    <i class="fa-solid fa-check"></i>
+                    <span class="border-b border-b-gray-500 hover:border-black">Multiple Windows</span>
+                </li>
+                <li class="text-gray-500 flex items-center gap-4 hover:cursor-pointer">
+                    <i class="fa-solid fa-check"></i>
+                    <span class="border-b border-b-gray-500 hover:border-b-gray-900">Multiple Windows</span>
+                </li>
+                <li class="text-gray-500 flex items-center gap-4 hover:cursor-pointer">
+                    <i class="fa-solid fa-check"></i>
+                    <span class="border-b border-b-gray-500 hover:border-b-gray-900">Multiple Windows</span>
+                </li>
+                <li class="text-gray-500 flex items-center gap-4 hover:cursor-pointer">
+                    <i class="fa-solid fa-check"></i>
+                    <span class="border-b border-b-gray-500 hover:border-b-gray-900">Multiple Windows</span>
+                </li>
+                <li class="text-gray-500 flex items-center gap-4 hover:cursor-pointer">
+                    <i class="fa-solid fa-check"></i>
+                    <span class="border-b border-b-gray-500 hover:border-b-gray-900">Multiple Windows</span>
+                </li>
+            </ul>    
+        </div>
+        <!-- inner content div ends here  -->
+
+        <!-- image div -->
+         <div class="image-inner-section">
+            <img src="../images/asset 66.svg" alt="">
+         </div>
+         <!-- imge div ends here  -->
+        </div>
+        <!-- feature2 card ends here  -->
+
+         <!-- feature3 card -->
+        <div class="flex flex-col gap-12 md:flex-row border border-gray-400 rounded-md p-8 mt-6 md:mt-8 lg:mt-12 items-center">
+        <!-- inner content div -->
+        <div class="flex flex-col gap-6 sm:w-1/2">
+            <!-- step3 -->
+            <div class="bg-yellow-50 border border-orange-700 text-orange-900 p-2 px-5 rounded-md w-fit ">Step 3</div>
+            <h1 class="font-bold text-3xl lg:text-4xl">Bootstrap straight from your web app</h1>
+            <p class="text-lg text-gray-600">Copy and paste your web app urf into toDesktop. Customize your app design, app , icon and window frame UI with no code. </p>
+            <ul class="grid grid-cols-2 text-sm sm:text-md gap-3 ">
+                <li class="text-gray-500  flex items-center gap-4 hover:cursor-pointer">
+                    <i class="fa-solid fa-check"></i>
+                    <span class="border-b border-b-gray-500 hover:border-b-gray-900">Multiple Windows</span>
+                </li>
+                <li class="text-gray-500 flex items-center gap-4 hover:cursor-pointer">
+                    <i class="fa-solid fa-check"></i>
+                    <span class="border-b border-b-gray-500 hover:border-black">Multiple Windows</span>
+                </li>
+                <li class="text-gray-500 flex items-center gap-4 hover:cursor-pointer">
+                    <i class="fa-solid fa-check"></i>
+                    <span class="border-b border-b-gray-500 hover:border-b-gray-900">Multiple Windows</span>
+                </li>
+                <li class="text-gray-500 flex items-center gap-4 hover:cursor-pointer">
+                    <i class="fa-solid fa-check"></i>
+                    <span class="border-b border-b-gray-500 hover:border-b-gray-900">Multiple Windows</span>
+                </li>
+                <li class="text-gray-500 flex items-center gap-4 hover:cursor-pointer">
+                    <i class="fa-solid fa-check"></i>
+                    <span class="border-b border-b-gray-500 hover:border-b-gray-900">Multiple Windows</span>
+                </li>
+                <li class="text-gray-500 flex items-center gap-4 hover:cursor-pointer">
+                    <i class="fa-solid fa-check"></i>
+                    <span class="border-b border-b-gray-500 hover:border-b-gray-900">Multiple Windows</span>
+                </li>
+            </ul>    
+        </div>
+        <!-- inner content div ends here  -->
+
+        <!-- image div -->
+         <div class="image-inner-section">
+            <img src="../images/asset 66.svg" alt="">
+         </div>
+         <!-- imge div ends here  -->
+        </div>
+        <!-- feature3 card ends here  -->
+
+     </section>
+    <!-- feature section ends here -->
+
+    <!-- payment plan section starts here  -->
+     <section class="payment-section p-6 pt-12">
+        <h1 class="font-bold text-4xl lg:text-5xl">Choose a plan that fits your needs</h1>
+        <div class="flex flex-col md:flex-row gap-6 mt-8">
+
+            <!-- card1 starts here  -->
+            <div class="card border border-gray-500 p-7 rounded-md flex flex-col gap-6 md:w-1/3 justify-around md:border-0 md:bg-slate-100 hover:md:bg-gray-100">
+                <h1 class="text-3xl font-bold">Free</h1>
+                <p>For personal use or testing your app before deploying to customers. </p>
+                <p class="text-lg font-semibold">KEY FEATURES </p>
+                <ul class="flex flex-col gap-3">
+                    <li class="flex gap-4 items-center">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Free for personal use </span>
+                    </li>
+                    <li class="flex gap-4 items-center">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Free for personal use </span>
+                    </li>
+                    <li class="flex gap-4 items-center">
+                        <i class="fa-solid fa-xmark"></i>
+                        <span>Free for personal use </span>
+                    </li>
+                    <li class="flex gap-4 items-center">
+                        <i class="fa-solid fa-xmark"></i>
+                        <span>Free for personal use </span>
+                    </li>
+                </ul>
+                <button class="p-3 border border-gray-400 font-bold text-blue-700 text-center rounded-md hover:bg-slate-50">Read Docs</button>
+            </div>
+            <!-- card 1 ends here -->
+
+            <!-- card 2 starts -->
+            <div class="card border border-gray-500 p-7 rounded-md flex flex-col gap-6 md:w-1/3 justify-around md:border-0 md:bg-slate-100 hover:md:bg-gray-100">
+                <h1 class="text-3xl font-bold">Essentail</h1>
+                <p>For simple desktop apps . </p>
+                <p><strong class="text-xl">$ 99 </strong>/month</p>
+                <p class="text-lg font-semibold">KEY FEATURES </p>
+                <ul class="flex flex-col gap-3">
+                    <li class="flex gap-4 items-center">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Free for personal use </span>
+                    </li>
+                    <li class="flex gap-4 items-center">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Free for personal use </span>
+                    </li>
+                    <li class="flex gap-4 items-center">
+                        <i class="fa-solid fa-xmark"></i>
+                        <span>Free for personal use </span>
+                    </li>
+                    <li class="flex gap-4 items-center">
+                        <i class="fa-solid fa-xmark"></i>
+                        <span>Free for personal use </span>
+                    </li>
+                </ul>
+                <button class="p-3 border border-gray-400 font-bold text-blue-700 text-center rounded-md hover:bg-slate-50">Read Docs</button>
+            </div>
+            <!-- card2 ends -->
+
+            <!-- card 3 starts  -->
+            <div class="card border border-gray-500 p-7 rounded-md flex flex-col gap-6 md:w-1/3 justify-around md:border-0 md:bg-slate-100 hover:md:bg-gray-100">
+                <h1 class="text-3xl font-bold">Professional </h1>
+                <p>For professional desktop apps . </p>
+                <p><strong class="text-xl">$ 240 </strong>/month</p>
+                <p class="text-lg font-semibold">KEY FEATURES </p>
+                <ul class="flex flex-col gap-3">
+                    <li class="flex gap-4 items-center">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Free for personal use </span>
+                    </li>
+                    <li class="flex gap-4 items-center">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Free for personal use </span>
+                    </li>
+                    <li class="flex gap-4 items-center">
+                        <i class="fa-solid fa-xmark"></i>
+                        <span>Free for personal use </span>
+                    </li>
+                    <li class="flex gap-4 items-center">
+                        <i class="fa-solid fa-xmark"></i>
+                        <span>Free for personal use </span>
+                    </li>
+                </ul>
+                <button class="p-3 border border-gray-400 font-bold text-blue-700 text-center rounded-md hover:bg-slate-50">Read Docs</button>
+            </div>
+            <!-- card 3 ends -->
+
+
+        </div>
+     </section>
+     <!-- payment plan section done here  -->
+
+    <!-- faq section starts here  -->
+    <section class="faq-section p-6 pt-12">
+        <h1 class="font-bold text-4xl lg:text-5xl">Frequently Asked Questions (FAQ)</h1>
+        <div class="faq-container mt-10 lg:mt-15 flex flex-col md:grid md:grid-cols-2 gap-6 px-5 lg:px-8">
+            <details class="text-md  bg-gray-100 border border-gray-200 px-5 py-3 md:py-5 rounded-md cursor-pointer hover:bg-gray-200">
+                <summary class="font-semibold">Is toDesktop for me ?</summary>
+                <p class="ml-8 mt-2">That depends If you would like to distribute your web app to your users as a downloadable
+                    desktop app then toDesktop is for you !
+                </p>
+            </details>
+            <details class="text-md  bg-gray-100 border border-gray-200 px-5 py-3 md:py-5  rounded-md cursor-pointer hover:bg-gray-200">
+                <summary class="font-semibold">Is toDesktop for me ?</summary>
+                 <p class="ml-8 mt-2">That depends If you would like to distribute your web app to your users as a downloadable
+                    desktop app then toDesktop is for you !
+                </p>
+            </details>
+            <details class="text-md  bg-gray-100 border border-gray-200 px-5 py-3 md:py-5  rounded-md cursor-pointer hover:bg-gray-200">
+                <summary class="font-semibold">Is toDesktop for me ?</summary>
+                 <p class="ml-8 mt-2">That depends If you would like to distribute your web app to your users as a downloadable
+                    desktop app then toDesktop is for you !
+                </p>
+            </details>
+            <details class="text-md  bg-gray-100 border border-gray-200 px-5 py-3 md:py-5  rounded-md cursor-pointer hover:bg-gray-200">
+                <summary class="font-semibold">I want to use toDesktop to convert multiple web apps, is there a bulk discount available ?</summary>
+                <p class="ml-8 mt-2">That depends If you would like to distribute your web app to your users as a downloadable
+                    desktop app then toDesktop is for you !
+                </p>
+            </details>
+            <details class="text-md  bg-gray-100 border border-gray-200 px-5 py-3 md:py-5 rounded-md cursor-pointer hover:bg-gray-200">
+                <summary class="font-semibold">Is toDesktop for me ?</summary>
+                 <p class="ml-8 mt-2">That depends If you would like to distribute your web app to your users as a downloadable
+                    desktop app then toDesktop is for you !
+                </p>
+            </details>
+            <details class="text-md  bg-gray-100 border border-gray-200 px-5 py-3 md:py-5 rounded-md cursor-pointer hover:bg-gray-200">
+                <summary class="font-semibold">Is toDesktop for me ?</summary>
+                 <p class="ml-8 mt-2">That depends If you would like to distribute your web app to your users as a downloadable
+                    desktop app then toDesktop is for you !
+                </p>
+            </details>
+            <details class="text-md  bg-gray-100 border border-gray-200 px-5 py-3 md:py-5 rounded-md cursor-pointer hover:bg-gray-200">
+                <summary class="font-semibold">I want to use toDesktop to convert multiple web apps, is there a bulk discount available ?</summary>
+                 <p class="ml-8 mt-2">That depends If you would like to distribute your web app to your users as a downloadable
+                    desktop app then toDesktop is for you !
+                </p>
+            </details>
+        </div>
+    </section>
+    <!-- faq section ends here  -->
+
+</body>
+<script src="script.js"></script>
+</html>
